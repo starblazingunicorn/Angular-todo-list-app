@@ -9,21 +9,45 @@
 
 <div class="columns is-mobile is-centered">
   <div class="column is-half">
-    <div class="container">
+    <!-- <div class="container">
       <ul>
         <li>
-          <a routerLink ="/app">Home</a>
+          <a routerLink="/app">Home</a>
         </li>
         <li>
-          <a routerLink ="/list">list</a>
+          <a routerLink="/list">list</a>
         </li>
         <li>
-          <a routerLink ="/item">item</a>
+          <a routerLink="/item">item</a>
         </li>
       </ul>
-    </div>
+    </div> -->
   </div>
 </div>
+
+<nav class="navbar is-transparent">
+  <div class="navbar-brand">
+    <!-- <a class="navbar-item" href="https://bulma.io"> -->
+      <!-- <img
+        src="https://bulma.io/images/bulma-logo.png"
+        alt="Bulma: a modern CSS framework based on Flexbox"
+        width="112"
+        height="28"
+      /> -->
+    <!-- </a> -->
+    <div class="navbar-burger" data-target="navbarExampleTransparentExample">
+      
+    </div>
+  </div>
+
+  <div id="navbarExampleTransparentExample" class="navbar-menu">
+    <div class="navbar-start">
+      <a class="navbar-item" routerLink="app"> Home </a>
+      <a class="navbar-item" routerLink="list"> list </a>
+      <a class="navbar-item" routerLink="item"> List item </a>
+    </div>
+  </div>
+</nav>
 
 <div class="columns is-mobile is-centered">
   <div class="column is-half">
@@ -31,7 +55,7 @@
       <!-- <task-item></task-item>
       <br />
       <task-list></task-list> -->
-      <!-- <router-outlet></router-outlet> -->
+      <router-outlet></router-outlet>
     </div>
   </div>
 </div>

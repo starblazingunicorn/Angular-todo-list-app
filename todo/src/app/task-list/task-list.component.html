@@ -1,1 +1,17 @@
-<p>task-list works!</p>
+<h1 class="title">List of things to do!</h1>
+<h2 class="subtitle">Add your tasks</h2>
+
+<input
+  class="input is-normal"
+  type="text"
+  placeholder="Add task item"
+  [value]="text"
+  (keyup)="changeText($event)"
+  (keyup.enter)="addToDo()"
+/>
+<br />
+<br />
+<button class="button">Add task</button>
+<br />
+<br />
+<task-item></task-item>
